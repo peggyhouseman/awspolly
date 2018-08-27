@@ -34,4 +34,4 @@ jobs:
       
      - deploy:
          command: |
-           aws s3 sync --delete --acl "public-read" --sse "AES256" voiceserverlesswebsite/public
+           aws s3 sync --delete --acl "public-read" --sse "AES256" voiceserverlesswebsite/public http://voice-serverless-website-site.s3-website-us-west-1.amazonaws.com
