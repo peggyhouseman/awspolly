@@ -91,6 +91,7 @@ Create bucket for hosting the language files processed by lambda
 - create new policy (s3, all permissions except delete, add restricted resources website and code buckets)
 - finish creating user with new policy
 - save the credentials file
+- goto circle ci -> insights -> proj settings (gear icon) -> aws permssions and use the access and secret key for the user
 
 # Update S3 site bucket to host static site
 - make note of url
