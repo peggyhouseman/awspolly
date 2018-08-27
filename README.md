@@ -1,3 +1,11 @@
+# Create IAM admin user
+- sign into AWS console as root
+- create new IAM user with AWS specific admin permission
+- save credential file
+- logout and log back in as new user
+
+# Install AWS Cli
+
 # Install Hugo
 brew install hugo
 
@@ -67,3 +75,29 @@ voiceserverlesswebsite/public
 - add project
 - select repo
 - start building
+
+# Create S3 Buckets
+Create bucket for hosting the website
+- aws s3 mb s3://voice-serverless-website-site
+Create bucket for hosting the lambda code
+- aws s3 mb s3://voice-serverless-website-code-bucket
+Create bucket for hosting the language files processed by lambda
+- aws s3 mb s3://voice-serverless-website-polly-bucket
+
+# Create IAM user for CircleCi and S3 access
+- goto IAM
+- create new user (programmatic access)
+- attach existing policies directly
+- create new policy (s3, all permissions except delete, add restricted resources website and code buckets)
+- finish creating user with new policy
+- save the credentials file
+
+# Update S3 site bucket to host static site
+- make note of url
+- update config.toml baseURL with s3 bucket url
+- in config.toml, add uglyurls = true
+
+# Create html files for each supported language
+- hugo new --kind chapter _index.en.md
+- hugo new --kind chapter _index.fr.md
+- open the files and set draft = false

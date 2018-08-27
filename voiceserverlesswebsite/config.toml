@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "http://voice-serverless-website-site.s3-website-us-west-1.amazonaws.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Route to excellence"
