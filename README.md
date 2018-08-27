@@ -101,3 +101,14 @@ Create bucket for hosting the language files processed by lambda
 - hugo new --kind chapter _index.en.md
 - hugo new --kind chapter _index.fr.md
 - open the files and set draft = false
+
+# Update circleci config to build and deploy
+new run
+- cd voiceserverlesswebsite
+- hugo
+new deploy
+delete contents before syncing
+set access to public read
+encrypt using standard server side encryption
+- aws s3 sync --delete --acl "public-read" --sse "AES256" voiceserverlesswebsite/public
+commit changes to source control to trigger build

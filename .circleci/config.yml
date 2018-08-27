@@ -25,3 +25,12 @@ jobs:
            cp hugo_installation_config.txt /etc/yum.repos.d/CentOS-hugo.repo
            yum install -y hugo
            hugo version
+    - run:
+        name: Build Website
+        command: |
+          cd voiceserverlesswebsite
+          hugo
+
+    - deploy:
+        command: |
+        
