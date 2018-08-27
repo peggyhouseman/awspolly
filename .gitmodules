@@ -1,0 +1,3 @@
+[submodule "voiceserverlesswebsite/themes/hugo-theme-learn"]
+	path = voiceserverlesswebsite/themes/hugo-theme-learn
+	url = https://github.com/matcornic/hugo-theme-learn.git
