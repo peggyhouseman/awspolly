@@ -53,3 +53,17 @@ push the contents of this folder to s3 folder
 - add gitignore file so public folder is not accidentally published
 touch .gitignore
 voiceserverlesswebsite/public
+
+# CircleCi
+- mkdir .circleci
+- touch config.yml
+- create build def
+- hugo installtion requires workaround
+- touch hugo_installation_config.txt
+- goto https://copr.fedorainfracloud.org/coprs/daftaupe/hugo/
+- copy CentOS Epel content into new file
+- push all to repo
+- sign up in circleci site using github account
+- add project
+- select repo
+- start building

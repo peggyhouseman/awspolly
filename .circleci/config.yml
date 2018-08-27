@@ -12,13 +12,12 @@ jobs:
      - run:
          name: Install Python 3.6
          command: |
-           yum install -y epel-release
-           yum install -y python36 python36-devel python36-pip
+           amazon-linux-extras install python3 -y
 
      - run:
          name: Install AWS CLI
          command: |
-           pip-3.6 install awscli
+           pip3 install awscli
 
      - run:
          name: Install Hugo
