@@ -2,14 +2,14 @@ baseURL = "http://voice-serverless-website-site.s3-website-us-west-1.amazonaws.c
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Route to excellence"
-theme = "hugo-theme-learn"
+theme = "hugo-theme-learn-master"
 defaultContentLanguageInSubdir = true
 uglyurls = true
 
 [params]
-   description = "A place of excellence"
-   author = "Your name"
-   showVisitedLinks = true
+    description = "A place of excellence"
+    author = "Your name"
+    showVisitedLinks = true
 
 [Languages]
 [Languages.en]
